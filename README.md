@@ -59,7 +59,7 @@ Puis l'on va recevoir sur le serveur
 $./serveur_udp
 Message reçu : abc
 ```
-# Partie 2 :Communication orientée flux (TCP/IP)
+# Partie 2 : Communication orientée flux (TCP/IP)
 
 Dans cette partie, une connexion stable est établie entre le client et le serveur.
 Le serveur fonctionne en mode **"Écho"** : il renvoie au client exactement ce qu'il a reçu.
