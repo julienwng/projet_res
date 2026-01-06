@@ -15,7 +15,7 @@ Un `Makefile` est fourni pour automatiser la compilation.
 
 ---
 
-# Partie 1 : Communication UDP
+# Partie 1 : Communication orientée datagramme (UDP)
 
 Le client envoie une chaîne de caractères au serveur, qui l'affiche sur sa sortie standard.
 > **Note :** La taille des messages est limitée à **20 caractères**.
@@ -59,7 +59,7 @@ Puis l'on va recevoir sur le serveur
 $./serveur_udp
 Message reçu : abc
 ```
-# Communication orientée flux (TCP/IP)
+# Partie 2 :Communication orientée flux (TCP/IP)
 
 Dans cette partie, une connexion stable est établie entre le client et le serveur.
 Le serveur fonctionne en mode **"Écho"** : il renvoie au client exactement ce qu'il a reçu.
