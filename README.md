@@ -100,6 +100,9 @@ $ ./client_tcpip localhost
 Connecté au serveur localhost sur le port 9600
 Entrez votre message: abc
 Message reçu du serveur: abc
+
+Entrez votre message: test
+Message reçu du serveur: test
 ``` 
 Pour déconnecter le client, entrer dans le terminal du client :
 
