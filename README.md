@@ -26,7 +26,10 @@ Pour compiler uniquement la partie UDP :
 ```bash
 make udp 
 ```
-
+Pour clean :
+```bash
+make clean
+```
 ## Exécution
 
 Il faut ouvrir **deux terminaux** différents (un pour le serveur, un pour le client).
@@ -55,4 +58,51 @@ Puis l'on va recevoir sur le serveur
 ```bash
 $./serveur_udp
 Message reçu : abc
+```
+# Communication orientée flux (TCP/IP)
+
+Dans cette partie, une connexion stable est établie entre le client et le serveur.
+Le serveur fonctionne en mode **"Écho"** : il renvoie au client exactement ce qu'il a reçu.
+
+##  Compilation
+
+Pour compiler uniquement la partie TCP :
+```bash
+make tcpip
+```
+Pour clean :
+```bash
+make clean
+```
+
+## Exécution
+
+Il faut ouvrir **deux terminaux** différents (un pour le serveur, un pour le client).
+
+### 1. Démarrer le Serveur
+Dans le premier terminal, lancez :
+```bash
+./serveur_tcpip
+```
+
+### 2. Pour le Client
+Dans un deuxième terminal, lancez : 
+```bash
+./client_tcpip localhost
+```
+
+### Exemple d'utilisation
+
+Après que le client s'est connecté au serveur, on peut envoyer plusieurs messages à la suite.
+
+```bash
+$ ./client_tcpip localhost
+Connecté au serveur localhost sur le port 9600
+Entrez votre message: abc
+Message reçu du serveur: abc
+``` 
+Pour déconnecter le client, entrer dans le terminal du client :
+
+```bash
+--quit
 ```
