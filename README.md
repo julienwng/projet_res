@@ -109,3 +109,4 @@ Pour déconnecter le client, entrer dans le terminal du client :
 ```bash
 --quit
 ```
+Puis le serveur va s'arrêter puisque le client s'est déconnecté.
