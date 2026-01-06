@@ -45,7 +45,7 @@ int main(int argc, char *argv[]){
     */
     while(1){
         /*
-        * Code de l'éintrieur de la boucle
+        * Code de l'intérieur de la boucle
         */
        adr_len = sizeof(client_addr);
        char buffer[21];
